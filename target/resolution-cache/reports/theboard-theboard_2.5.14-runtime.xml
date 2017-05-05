@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="theboard"
+		module="theboard_2.5.14"
+		revision="1.0"
+		conf="runtime"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20170502205159"/>
+	<dependencies>
+		<module organisation="com.typesafe.play" name="play-ws_2.5.14">
+			<revision name="2.4.2" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="theboard" name="theboard_2.5.14" conf="compile, runtime" rev="2.4.2" rev-constraint-default="2.4.2" rev-constraint-dynamic="2.4.2" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-cache_2.5.14">
+			<revision name="2.4.2" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="theboard" name="theboard_2.5.14" conf="compile, runtime" rev="2.4.2" rev-constraint-default="2.4.2" rev-constraint-dynamic="2.4.2" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-jdbc_2.5.14">
+			<revision name="2.4.2" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="theboard" name="theboard_2.5.14" conf="compile, runtime" rev="2.4.2" rev-constraint-default="2.4.2" rev-constraint-dynamic="2.4.2" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-netty-server_2.5.14">
+			<revision name="2.4.2" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="theboard" name="theboard_2.5.14" conf="compile, runtime" rev="2.4.2" rev-constraint-default="2.4.2" rev-constraint-dynamic="2.4.2" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-server_2.5.14">
+			<revision name="2.4.2" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="theboard" name="theboard_2.5.14" conf="compile, runtime" rev="2.4.2" rev-constraint-default="2.4.2" rev-constraint-dynamic="2.4.2" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="twirl-api_2.5.14">
+			<revision name="1.1.1" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="theboard" name="theboard_2.5.14" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.5.14" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="theboard" name="theboard_2.5.14" conf="compile, runtime" rev="2.5.14" rev-constraint-default="2.5.14" rev-constraint-dynamic="2.5.14" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
