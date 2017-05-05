@@ -1,8 +1,0 @@
-[0m[[31merror[0m] [0m/Users/casey/Documents/TheBoard/app/assets/stylesheets/main.sass:6: Error: File to import not found or unreadable: lib/bootstrap-sass/assets/stylesheets/bootstrap[0m
-[0m[[31merror[0m] [0m       Parent style sheet: /Users/casey/Documents/TheBoard/app/assets/stylesheets/main.sass[0m
-[0m[[31merror[0m] [0m        on line 6 of app/assets/stylesheets/main.sass[0m
-[0m[[31merror[0m] [0m>> @import "lib/bootstrap-sass/assets/stylesheets/bootstrap";[0m
-[0m[[31merror[0m] [0m   ^[0m
-[0m[[31merror[0m] [0m@import lib/bootstrap-sass/assets/stylesheets/bootstrap[0m
-[0m[[31merror[0m] [0m^[0m
-[0m[[31merror[0m] [0mone error found[0m

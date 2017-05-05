@@ -1,9 +1,0 @@
-{
-  "version" : 3,
-  "sourceRoot" : "/assets/",
-  "file" : "login.css",
-  "sources" : [ "stylesheets/login.sass" ],
-  "sourcesContent" : [ "#createAccount {\n  margin-top: 20px;\n  float: right; }\n\n" ],
-  "mappings" : "AAAA,AAAA,cAAc,AAAC,CACb,UAAU,CAAE,IAAK,CACjB,KAAK,CAAE,KAAM,CAAG",
-  "names" : [ ]
-}
