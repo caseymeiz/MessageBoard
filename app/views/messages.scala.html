@@ -1,0 +1,30 @@
+@(user:User,messagelist:Seq[Message],UserDB:UserDB)(implicit flash:Flash, messages: play.api.i18n.Messages, request: RequestHeader)
+
+@main("Messages"){
+    <div class="container messages">
+
+        <a href="@routes.MessageController.create" class="btn-sm btn btn-primary ">New Message</a>
+        <a href="@routes.UserController.logout" class="btn-sm btn btn-warning ">Logout</a>
+
+
+        <table class="table">
+            <thead >
+                <tr>
+                    <th>User</th>
+                    <th>Time</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                 @for(m <- messagelist) {
+                     <tr>
+                         <td>@UserDB.findById(m.user_id).get.username</td>
+                         <td>@m.date.toString</td>
+                         <td>@m.text</td>
+                     </tr>
+                 }
+            </tbody>
+        </table>
+    </div>
+
+}

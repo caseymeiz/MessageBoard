@@ -1,0 +1,28 @@
+@(form: Form[(String)])(implicit flash: Flash, messages: play.api.i18n.Messages, request: RequestHeader)
+
+@main("New Message"){
+    <div class="container" id="login">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="dialog">
+    @helper.form(routes.MessageController.create ){
+
+        <h2 >Create message</h2>
+        @form.globalError.map { error =>
+            <p class="error">
+                @error.message
+            </p>
+        }
+
+
+
+        <div class="form-group">
+            @helper.textarea(form("message"),'rows -> "8",'_label -> "Message",'_showConstraints -> false , 'class ->"form-control", 'placeholder ->"Enter message")
+        </div>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+    }
+
+    </div>
+    </div>
+    </div>
+}
