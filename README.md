@@ -14,9 +14,70 @@ and stores the messages/users in a relational database.
 - [Java Development Kit v1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 
-### Getting Strated
-To complie the 
+### How to run the app
+Install the runtime Environment
+
+##### Install Environment
+```bash
+apt-get install postgresql
+apt-get install openjdk-8-jdk
+```
+##### Set-up PostgreSQL account
 
 ```
+sudo -u postgres psql
+\password postgres
+\q
+```
+You may have to configure authentication
+```
+sudo nano /etc/postgresql/9.6/main/pg_hba.conf
+```
+change this line
+```
+    local   all             all                                     peer
 
 ```
+to
+```
+    local   all             all                                     trust
+```
+or
+```
+    local   all             all                                     md5
+```
+##### Schema set-up
+```
+psql -U postges
+```
+```
+CREATE DATABASE IF NOT EXISTS theboard;
+
+\c theboard
+
+CREATE TABLE IF NOT EXISTS users(
+    id SERIAL PRIMARY KEY,
+    username text,
+    password text
+);
+
+CREATE TABLE IF NOT EXISTS messages(
+    id SERIAL PRIMARY KEY,
+    message TEXT,
+    time DATE,
+    user_id INTEGER REFERENCES users (id)
+);
+```
+
+#### Running the app
+Download this github repo and extract the packaged app
+
+```
+tar -xvzf app.tgz
+cd app/bin
+bash theboard
+```
+
+The app should be running now 
+[localhost:9000](localhost:9000)
+
